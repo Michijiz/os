@@ -806,16 +806,7 @@ const TASK_CAT   = { Allenamento:'sport', Studio:'studio', Lettura:'studio', Str
 const CAT_COLOR  = { studio:'#5599ff', sport:'#00e8a0', hobby:'#ff7c38' };
 const CAT_LABEL  = { studio:'Studio', sport:'Sport', hobby:'Hobby' };
 
-const QUOTES = [
-  '"La disciplina e scegliere tra quello che vuoi adesso e quello che vuoi di piu."',
-  '"Non cercare motivazione. Costruisci abitudine."',
-  '"Ogni giorno e un mattone. Ogni giorno saltato e una crepa."',
-  '"La costanza batte il talento quando il talento non e costante."',
-  '"Un giorno o giorno uno. Tu decidi."',
-  '"Fai oggi quello che gli altri non faranno. Vivi domani come gli altri non possono."',
-  '"Il tuo futuro ti ringraziera ogni volta che non molli."',
-  '"Non devi avere voglia. Devi farlo e basta."'
-];
+
 
 const GIORNI = ['Domenica','Lunedi','Martedi','Mercoledi','Giovedi','Venerdi','Sabato'];
 const MESI   = ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
@@ -885,7 +876,7 @@ function initHeader(){
     `${GIORNI[now.getDay()]} <span class="hi">${now.getDate()}</span>`;
 
   document.getElementById('streak-num').textContent = S.streak;
-  document.getElementById('home-quote').textContent = QUOTES[S.streak % QUOTES.length];
+
 }
 
 function streakTap(){
